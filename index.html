@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAQUETACION</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body, html {
+            height: 100%;
+        }
+        
+        .table {
+            display: flex;
+            height: 33.33%;
+        }
+        
+        .column {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        
+        .column.main {
+            flex: 3;
+        }
+        
+        /* Estilos de colores para cada cuadro */
+        .color1 {
+            background-color: #FF0000; /* Rojo */
+        }
+        
+        .color2 {
+            background-color: #00FF00; /* Verde */
+        }
+        
+        .color3 {
+            background-color: #0000FF; /* Azul */
+        }
+        
+        .color4 {
+            background-color: #FFFF00; /* Amarillo */
+        }
+        
+        .color5 {
+            background-color: #FF00FF; /* Magenta */
+        }
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="column main color1">COLUMNA 1
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="column color2">COLUMNA 2
+        </div>
+        <div class="column main color3">COLUMNA 3
+        </div>
+        <div class="column color4">COLUMNA 4
+        </div>
+    </div>
+
+    <div class="table">
+        <div class="column main color5">COLUMNA 5
+        </div>
+    </div>
+</body>
+</html>
